@@ -1,0 +1,55 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+}
+
+#pill:hover::before {
+  background: #B83280;
+  width: 100%;
+}
+
+#pill:before {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 23%;
+  background: #B83280;
+}
+
+.pill span {
+  color: #d23669;
+  mix-blend-mode: difference;
+}
+
+.rounded-pill {
+  border-radius: 20px;
+}
+
+#cursor-blinking { animation: 1s blink step-end infinite; }
+
+@keyframes 'blink' {
+  from, to { color: transparent; }
+  50% { color: black; }
+}
