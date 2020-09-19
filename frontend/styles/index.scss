@@ -53,3 +53,80 @@ main {
   from, to { color: transparent; }
   50% { color: black; }
 }
+
+a.underline-pink {
+	background: linear-gradient(transparent 70%, #fbb6ce 0);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a.underline-pink:hover {
+  background: linear-gradient(transparent 70%, #f687b3 0);
+}
+
+.flex-basis-half {
+  flex-basis: calc(50% - 2rem);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.grid {
+	display: grid;
+	align-items: stretch;
+}
+
+.grid.post {
+	margin-top: 5rem;
+	grid-gap: 5rem;
+	grid-template-columns: 3fr 1fr;
+}
+
+.max-w-180 {
+  max-width: 180px;
+}
+
+ul.list-initial li {
+  list-style: initial;
+}
+
+pre.language-terminal {
+	position: relative;
+	background: #fff;
+	color: #595c62;
+	padding-top: 3rem;
+	margin: 2rem 0;
+	border-radius: .3rem;
+	border: 1px solid #ced1d3;
+}
+
+pre.language-terminal::after {
+	content: "Output";
+	font-size: .9rem;
+	position: absolute;
+	top: 4px;
+	right: 8px;
+}
+
+pre.language-terminal::before {
+	content: "\2022   \2022   \2022";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #e0e3e7;
+	color: #b3b9c5;
+	width: 100%;
+	font-size: 2.5rem;
+	margin: 0;
+	line-height: 0;
+	padding: 18px 0 16px;
+	text-indent: 6px;
+	letter-spacing: -18px;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+

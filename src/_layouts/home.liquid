@@ -4,98 +4,17 @@ layout: default
 
 <div class="relative bg-white overflow-hidden">
   <div class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
-      {% render "navbar", metadata: site.metadata, page: page %}
-    </div>
 
-    <!--
-      Mobile menu, show/hide based on menu open state.
-
-      Entering: "duration-150 ease-out"
-        From: "opacity-0 scale-95"
-        To: "opacity-100 scale-100"
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    -->
-    <!-- <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-      <div class="rounded-lg shadow-md">
-        <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-          <div class="px-5 pt-4 flex items-center justify-between">
-            <div>
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="">
-            </div>
-            <div class="-mr-2">
-              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
-                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="px-2 pt-2 pb-3">
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out uppercase" role="menuitem">Product</a>
-            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out uppercase" role="menuitem">Features</a>
-            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out uppercase" role="menuitem">Marketplace</a>
-            <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out uppercase" role="menuitem">Company</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    {% render "navbar_mobile", metadata: site.metadata, page: page %}
     
-          <!-- contains main (title +hero image) and subtitle stacked under each other  -->
-          <div id="hero-container" class="flex flex-col justify-center mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+          <!-- contains main (title +hero image) navbar and subtitle stacked under each other  -->
+          <div id="hero-container" class="flex flex-col justify-center mt-10 mx-auto max-w-screen-xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 xl:mt-10">
         
             <!-- (pre-title + title) and hero image centered vertically -->
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center pb-16">
               
               <!-- pre-title and title vertically aligned on the end-->
               <div class="flex items-end">
-                
-                 <!-- pre-title and title piece combos' holder -->
-                 <!-- <div class="flex flex-col"> -->
-                    <!-- pre-title and title combo -->
-                    <!-- <div class="flex">
-                      <div class="w-16"></div>
-                      <div>
-                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                          Canny
-                        </h2>
-                      </div>
-                    </div>
-                    
-                    <div class="flex items-end">     
-                      <div class="w-16 text-gray-300 align-middle text-4xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-6xl">
-                        >
-                      </div>
-                      <div>
-                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                          Code<span class="font-light" id="cursor-blinking">_</span>
-                        </h2>
-                      </div>
-                    </div>
-                    
-                    <div class="flex items-end">
-                      <div class="w-16 font-bold text-gray-300 align-middle text-4xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-5xl">
-                        for&nbsp;
-                      </div>
-                      <div>
-                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                          Curious
-                        </h2>
-                      </div>
-                    </div>
-                    
-                    <div class="flex">
-                      <div class="w-16"></div>
-                      <div>
-                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                          Creators
-                        </h2>
-                      </div>
-                    </div>
-                </div> -->
-                
                 <!-- pre-title -->
                 <div class="flex">        
                   <div class="flex flex-col self-end text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
@@ -135,13 +54,15 @@ layout: default
               
             </div>
             
-            <div class="flex justify-center text-2xl">
-              <p class="m-24"> Aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+            {% render "navbar", metadata: site.metadata, page: page %}
+            
+            <div class="flex text-xl">
+              <p class="m-auto max-w-5xl p-10 "> Aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
             </div>
             
           </div>
     
-    <main class="flex justify-center flex-grow mt-10 mx-auto max-w-screen-lg px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+    <main class="flex justify-center flex-grow mt-8 mx-auto max-w-screen-lg px-4 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 xl:mt-8">
       <div id="articles-container" class="flex flex-col justify-start w-full">
         <h3 class="border-t-4 border-solid border-black text-2xl pt-1">Latest articles</h3>
         <div class="block flex flex-col m-8">
@@ -274,3 +195,48 @@ layout: default
 
 <!-- 
 {{ content }} -->
+
+<!-- graveyard -->
+                 <!-- pre-title and title piece combos' holder -->
+                 <!-- <div class="flex flex-col"> -->
+                    <!-- pre-title and title combo -->
+                    <!-- <div class="flex">
+                      <div class="w-16"></div>
+                      <div>
+                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                          Canny
+                        </h2>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-end">     
+                      <div class="w-16 text-gray-300 align-middle text-4xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-6xl">
+                        >
+                      </div>
+                      <div>
+                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                          Code<span class="font-light" id="cursor-blinking">_</span>
+                        </h2>
+                      </div>
+                    </div>
+                    
+                    <div class="flex items-end">
+                      <div class="w-16 font-bold text-gray-300 align-middle text-4xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-5xl">
+                        for&nbsp;
+                      </div>
+                      <div>
+                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                          Curious
+                        </h2>
+                      </div>
+                    </div>
+                    
+                    <div class="flex">
+                      <div class="w-16"></div>
+                      <div>
+                        <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                          Creators
+                        </h2>
+                      </div>
+                    </div>
+                </div> -->
