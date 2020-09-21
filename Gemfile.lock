@@ -9,17 +9,17 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    awesome_print (1.8.0)
-    bridgetown (0.16.0)
-      bridgetown-builder (= 0.16.0)
-      bridgetown-core (= 0.16.0)
-      bridgetown-paginate (= 0.16.0)
-    bridgetown-builder (0.16.0)
-      bridgetown-core (= 0.16.0)
-    bridgetown-core (0.16.0)
+    amazing_print (1.2.1)
+    bridgetown (0.17.0)
+      bridgetown-builder (= 0.17.0)
+      bridgetown-core (= 0.17.0)
+      bridgetown-paginate (= 0.17.0)
+    bridgetown-builder (0.17.0)
+      bridgetown-core (= 0.17.0)
+    bridgetown-core (0.17.0)
       activesupport (~> 6.0)
       addressable (~> 2.4)
-      awesome_print (~> 1.8)
+      amazing_print (~> 1.2)
       colorator (~> 1.0)
       erubi (~> 1.9)
       faraday (~> 1.0)
@@ -37,8 +37,8 @@ GEM
       terminal-table (~> 1.8)
       thor (~> 1.0)
       tilt (~> 2.0)
-    bridgetown-paginate (0.16.0)
-      bridgetown-core (= 0.16.0)
+    bridgetown-paginate (0.17.0)
+      bridgetown-core (= 0.17.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     erubi (1.9.0)
@@ -87,7 +87,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bridgetown (~> 0.16.0)
+  bridgetown (~> 0.17.0)
 
 BUNDLED WITH
    2.1.4
