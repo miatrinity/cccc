@@ -6,17 +6,17 @@ layout: default
   <div class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
 
     {% render "navbar_mobile", metadata: site.metadata, page: page %}
-    
+
           <!-- contains main (title +hero image) navbar and subtitle stacked under each other  -->
           <div id="hero-container" class="flex flex-col justify-center mt-10 mx-auto max-w-screen-xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 xl:mt-10">
-        
+
             <!-- (pre-title + title) and hero image centered vertically -->
             <div class="flex items-center justify-center pb-16">
-              
+
               <!-- pre-title and title vertically aligned on the end-->
-              <div class="flex items-end">
+              {% comment %} <div class="flex items-end"> {% endcomment %}
                 <!-- pre-title -->
-                <div class="flex">        
+                {% comment %} <div class="flex">
                   <div class="flex flex-col self-end text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                     <div class="text-4xl tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-6xl"></div>
                     <div class="text-gray-300  h-16 align-middle text-6xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-6xl">
@@ -28,8 +28,8 @@ layout: default
                     <div>&nbsp;</div>
                   </div>
                 </div>
-                
-    
+
+
                 <div>
                   <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                   Canny
@@ -42,31 +42,29 @@ layout: default
                       Creators
                     </span>
                   </h2>
-                </div>  
-              </div>
-              
+                </div>
+              </div> {% endcomment %}
+
               <!-- hero image -->
               <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#" aria-label="Home">
-                  <img class="" src="./images/hero.png" alt="Logo">
+                  <img class="" src="./images/cccc-logo-1.png" alt="Logo">
                 </a>
               </div>
-              
             </div>
-            
-            {% render "navbar", metadata: site.metadata, page: page %}
-            
+
             <div class="flex text-xl">
-              <p class="m-auto max-w-5xl p-10 "> Aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-            </div>
-            
+                <p class="m-auto max-w-5xl p-10 "> Aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+              </div>
+
+            {% render "navbar", metadata: site.metadata, page: page %}
           </div>
-    
+
     <main class="flex justify-center flex-grow mt-8 mx-auto max-w-screen-lg px-4 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 xl:mt-8">
       <div id="articles-container" class="flex flex-col justify-start w-full">
         <h3 class="border-t-4 border-solid border-black text-2xl pt-1">Latest articles</h3>
         <div class="block flex flex-col m-8">
-          
+
           <a href="#" class="mt-16">
             <div id="article-card" class="flex flex-col cursor-pointer w-full flex-wrap shadow-cg p-8 rounded-lg hover:shadow-cp transition-shadow duration-200">
               <div id="article-header" class="flex flex-col justify-between mb-4 w-full">
@@ -95,7 +93,7 @@ layout: default
               </div>
             </div>
           </a>
-          
+
           <a href="" class="mt-16">
             <div id="article-card" class="flex flex-col cursor-pointer w-full flex-wrap shadow-cg p-8 rounded-lg hover:shadow-cp transition-shadow duration-200">
               <div id="article-header" class="flex flex-col justify-between mb-4 w-full">
@@ -124,7 +122,7 @@ layout: default
               </div>
             </div>
           </a>
-          
+
           <a href="#" class="mt-16">
             <div id="article-card" class="flex flex-col cursor-pointer w-full flex-wrap shadow-cg p-8 rounded-lg hover:shadow-cp transition-shadow duration-200">
               <div id="article-header" class="flex flex-col justify-between mb-4 w-full">
@@ -153,7 +151,7 @@ layout: default
               </div>
             </div>
           </a>
-          
+
           <a href="" class="mt-16">
             <div id="article-card" class="flex flex-col cursor-pointer w-full flex-wrap shadow-cg p-8 rounded-lg hover:shadow-cp transition-shadow duration-200">
               <div id="article-header" class="flex flex-col justify-between mb-4 w-full">
@@ -182,18 +180,18 @@ layout: default
               </div>
             </div>
           </a>
-          
-          
+
+
         </div>
       </div>
 
     </main>
-    
+
   </div>
 </div>
 
 
-<!-- 
+<!--
 {{ content }} -->
 
 <!-- graveyard -->
@@ -208,8 +206,8 @@ layout: default
                         </h2>
                       </div>
                     </div>
-                    
-                    <div class="flex items-end">     
+
+                    <div class="flex items-end">
                       <div class="w-16 text-gray-300 align-middle text-4xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-6xl">
                         >
                       </div>
@@ -219,7 +217,7 @@ layout: default
                         </h2>
                       </div>
                     </div>
-                    
+
                     <div class="flex items-end">
                       <div class="w-16 font-bold text-gray-300 align-middle text-4xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-5xl">
                         for&nbsp;
@@ -230,7 +228,7 @@ layout: default
                         </h2>
                       </div>
                     </div>
-                    
+
                     <div class="flex">
                       <div class="w-16"></div>
                       <div>
