@@ -1,11 +1,31 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+.deep-pink {
+  color: #c80967;
+}
+
+.light-pink {
+  color: #ea6d9f;
+}
+
+.base-dark {
+  color: #172034;
+}
+
+.base-gray {
+  color: #9ba0a3;
+}
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family:'Century Gothic','Didact Gothic',sans-serif;
 }
 
 main {
@@ -79,15 +99,24 @@ a.underline-pink:hover {
   border-radius: 50%;
 }
 
-.grid {
-	display: grid;
-	align-items: stretch;
-}
-
 .grid.post {
 	margin-top: 5rem;
 	grid-gap: 5rem;
 	grid-template-columns: 3fr 1fr;
+}
+
+.grid.hero {
+  grid-template-columns: 1fr 2fr;
+}
+
+.font-hero {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+}
+
+.font-tagline {
+  font-family: 'Poppins', sans-serif;
+  line-height: 0.5rem;
 }
 
 .max-w-180 {
