@@ -21,6 +21,80 @@
   color: #9ba0a3;
 }
 
+@media (max-width: 48em) {
+  body .container {
+  padding: 4rem 2rem;
+}
+  nav div:not(:first-child):not(:last-child) {
+    display: none;
+  }
+  nav div.nav-toggle a {
+    display: block;
+  }
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+}
+
+#hero-container > nav {
+  height: 4rem;
+  background-color: #FFF;
+  bottom: 0;
+  z-index: 100;
+  text-align: center;
+  border: 2px dotted red;
+  
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+}
+
+nav h3 {
+  margin: 0;
+  font-family: "Poppins", "Hel­vetica", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+nav img {
+  max-width: 2.5em;
+}
+nav div.logo, nav div.nav-toggle {
+  visibility: hidden;
+}
+nav .nav-toggle a {
+  display: none;
+}
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+}
+.nav-full {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  right: -100vw;
+  height: 100%;
+  background-color: #212121;
+  transform: translate(0px,  0px);
+  transition: 0.25s ease-out;
+}
+.nav-full a {
+  color: #FFF;
+}
+
+.nav-full.active {
+  transform: translate(-100vw,  0px);
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -78,7 +152,7 @@ main {
 
 @keyframes 'blink' {
   from, to { color: transparent; }
-  50% { color: black; }
+  50% { color: #9ba0a3; }
 }
 
 a.underline-pink {

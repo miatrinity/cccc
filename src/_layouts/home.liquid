@@ -4,66 +4,32 @@ layout: default
 
 <div class="relative bg-white overflow-hidden">
   <div class="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+          
+    <!-- contains main (title +hero image) navbar and subtitle stacked under each other  -->
+    <div id="hero-container" class="border border-green-900 flex flex-col justify-center mt-10 mx-auto max-w-screen-xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 xl:mt-10">
 
-    {% render "navbar_mobile", metadata: site.metadata, page: page %}
+      <!-- (pre-title + title) and hero image centered vertically -->
+      <div class="flex items-center justify-center pb-16">
 
-          <!-- contains main (title +hero image) navbar and subtitle stacked under each other  -->
-          <div id="hero-container" class="flex flex-col justify-center mt-10 mx-auto max-w-screen-xl px-4 sm:mt-10 sm:px-6 md:mt-10 lg:mt-10 xl:mt-10">
-
-            <!-- (pre-title + title) and hero image centered vertically -->
-            <div class="flex items-center justify-center pb-16">
-
-              <!-- pre-title and title vertically aligned on the end-->
-              {% comment %} <div class="flex items-end"> {% endcomment %}
-                <!-- pre-title -->
-                {% comment %} <div class="flex">
-                  <div class="flex flex-col self-end text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                    <div class="text-4xl tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-6xl"></div>
-                    <div class="text-gray-300  h-16 align-middle text-6xl tracking-tight leading-10 font-light sm:text-5xl sm:leading-none md:text-6xl">
-                        >
-                    </div>
-                    <div class="text-4xl text-gray-300 tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-5xl">
-                      <span class="font-bold text-6xl text-gray-300 tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-5xl">for&nbsp;</span>
-                    </div>
-                    <div>&nbsp;</div>
-                  </div>
-                </div>
-
-
-                <div>
-                  <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                  Canny
-                  <br />
-                  Code<span class="font-light" id="cursor-blinking">_</span>
-                  <br />
-                    <span class="text-pink-700">
-                      Curious
-                      <br />
-                      Creators
-                    </span>
-                  </h2>flex
-                </div>
-              </div> {% endcomment %}
-
-              <!-- hero image -->
-              <!-- flex items-center justify-between w-full md:w-auto -->
-             <div class="flex hero flex-wrap">
-                <img class="sm:mx-auto md:p-4 lg:p-2 xl:p-0 border border-pink-900" src="./images/logo.png" alt="Logo">
-                <div class="flex-col items-center self-center sm:mx-auto md:p-4 lg:p-2 xl:p-0 border border-green-900 border-4 border-dashed">
-                  <span class="block sm:text-2xl md:text-4xl lg:text-7xl xl:text-8xl font-hero border border-red-600">
-                    <span class="base-dark">Canny</span><span class="deep-pink">Code</span>
-                  </span>
-                  <span class="block base-gray sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-tagline border border-blue-400">> for Curious Creators _</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex text-xl">
-                <p class="m-auto max-w-5xl p-10 "> Aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-              </div>
-
-            {% render "navbar", metadata: site.metadata, page: page %}
+        <!-- hero image -->
+        <!-- flex items-center justify-between w-full md:w-auto -->
+        <div class="flex hero flex-wrap">
+          <img class="sm:mx-auto md:p-4 lg:p-2 xl:p-0 border border-pink-900" src="./images/logo.png" alt="Logo">
+          <div class="flex-col items-center self-center sm:mx-auto md:p-4 lg:p-2 xl:p-0 border border-green-900 border-4 border-dashed">
+            <span class="block sm:text-2xl md:text-4xl lg:text-7xl xl:text-8xl font-hero border border-red-600">
+              <span class="base-dark">Canny</span><span class="deep-pink">Code</span>
+            </span>
+            <span class="block base-gray sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-tagline border border-blue-400">> for Curious Creators <span id="cursor-blinking">_</span></span>
           </div>
+        </div>
+      </div>
+
+      <div class="flex text-xl">
+        <p class="m-auto max-w-5xl p-10 "> Aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+      </div>
+
+      {% render "navbar", metadata: site.metadata, page: page %}
+    </div>
 
     <main class="flex justify-center flex-grow mt-8 mx-auto max-w-screen-lg px-4 sm:mt-8 sm:px-6 md:mt-8 lg:mt-8 xl:mt-8">
       <div id="articles-container" class="flex flex-col justify-start w-full">
